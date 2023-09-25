@@ -1,0 +1,16 @@
+# Get started by setting up a python environment.
+# NOTE: You need python version >= 3.10
+python3 -m venv gcn-venv
+source gcn-venv/bin/activate
+pip3 install -r requirements.txt
+
+# Special mention of DGL
+
+# To visualize data run the following:
+python3 visualize_data.py $DATASET$
+# $DATASET$ can be "cora"
+
+# to test the GCN
+python3 train.py
+
+# to save output
